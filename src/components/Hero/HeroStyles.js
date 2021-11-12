@@ -45,8 +45,8 @@ export const CenterSection = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-
     margin: 0 auto;
+
   }
 `;
 
@@ -54,7 +54,7 @@ export const HeroSectionTitle = styled.h2`
   font-weight: 800;
   font-size: 60px;
   line-height: 72px;
-  width: max-content;
+  
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;

@@ -46,7 +46,7 @@ export const LinkItem = styled.a`
 export const SocialIconsContainer = styled.div`
 max-width: 1040px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 
 @media ${props => props.theme.breakpoints.md}{
   display: flex;
@@ -138,7 +138,7 @@ export const LinkList = styled.ul`
 
 export const LinkColumn = styled.div`
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	max-width: 220px;
 	width: 100%;
 `

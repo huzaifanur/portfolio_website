@@ -1,5 +1,7 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiZend, } from 'react-icons/di';
+import { AiOutlineCloudServer } from 'react-icons/ai';
+
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -19,10 +21,12 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
+             React JS <br/> 
+             NEXT JS <br/>
+             Material UI <br/>
+             Styled Componennts <br/>
              HTML | CSS | SASS <br/> 
-             Tailwindcss | Material UI <br/> Styled Componennts
-             <br/>
-             React JS | NEXT JS
+             Tailwindcss <br/> 
 
             
           </ListParagraph>
@@ -35,20 +39,25 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Node and Databases
+           
+            Node & Express JS <br/>
+            Mongo DB <br/>
+            Postgres SQL
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <AiOutlineCloudServer size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Dev Ops</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            CI /CD Jenkins <br/>
+            Pipeline <br/>
+            Docker & Kubernetes <br/>
+            AWS <br/>
+            Digital Ocean <br/>
           </ListParagraph>
         </ListContainer>
       </ListItem>
