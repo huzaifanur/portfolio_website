@@ -19,8 +19,12 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
+             HTML | CSS | SASS <br/> 
+             Tailwindcss | Material UI <br/> Styled Componennts
+             <br/>
+             React JS | NEXT JS
+
+            
           </ListParagraph>
         </ListContainer>
       </ListItem>
