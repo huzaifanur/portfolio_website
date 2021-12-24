@@ -6,7 +6,7 @@ export const projects = [
     image: "/images/1.png",
     tags: ["React", "MaterialUI", "CSS"],
     source: "https://github.com/huzaifanur/admin-dash-react",
-    visit: "https://huzaifanur.github.io/home",
+    visit: "https://huzaifanur.github.io/admin-dash-react/",
     id: 0,
   },
   {
