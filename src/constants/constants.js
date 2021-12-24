@@ -14,7 +14,7 @@ export const projects = [
     description:
       "A simple page that pulls movies data from TMDB, represent a hulu clone.",
     image: "/images/2.png",
-    tags: ["React", "JavaScript"],
+    tags: ["NEXT JS", "Tailwind CSS"],
     source: "https://github.com/huzaifanur/hulu-demo",
     visit: "https://hulu-demo-theta.vercel.app/",
     id: 1,
