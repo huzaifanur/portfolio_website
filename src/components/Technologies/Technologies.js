@@ -1,17 +1,28 @@
-import React from 'react';
-import { DiFirebase, DiReact,} from 'react-icons/di';
-import { AiOutlineCloudServer } from 'react-icons/ai';
+import React from "react";
+import { DiFirebase, DiReact } from "react-icons/di";
+import { AiOutlineCloudServer } from "react-icons/ai";
 
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import {
+  List,
+  ListContainer,
+  ListItem,
+  ListParagraph,
+  ListTitle,
+} from "./TechnologiesStyles";
 
-const Technologies = () =>  (
+const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From full stack development to deployment.
+      I've worked with a range a technologies in the web development world. From
+      full stack development to deployment.
     </SectionText>
     <List>
       <ListItem>
@@ -21,14 +32,12 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-             React JS <br/> 
-             NEXT JS <br/>
-             Material UI <br/>
-             Styled Componennts <br/>
-             HTML | CSS | SASS <br/> 
-             Tailwindcss <br/> 
-
-            
+            React JS <br />
+            NEXT JS <br />
+            HTML | CSS | SASS <br />
+            Material UI <br />
+            Styled Componennts <br />
+            Tailwindcss <br />
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -39,9 +48,8 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-           
-            Node & Express JS <br/>
-            Mongo DB <br/>
+            Node & Express JS <br />
+            Mongo DB <br />
             Postgres SQL
           </ListParagraph>
         </ListContainer>
@@ -53,11 +61,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Dev Ops</ListTitle>
           <ListParagraph>
-            CI /CD Jenkins <br/>
-            Pipeline <br/>
-            Docker & Kubernetes <br/>
-            AWS <br/>
-            Digital Ocean <br/>
+            GIT <br /> Docker
           </ListParagraph>
         </ListContainer>
       </ListItem>

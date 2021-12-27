@@ -1,16 +1,28 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub,  AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import Link from "next/link";
+import React from "react";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import { DiCssdeck } from "react-icons/di";
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import {
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+} from "./HeaderStyles";
 
-const Header = () =>  (
+const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-          <DiCssdeck size="3rem" /> <span style={{fontSize:"30px",fontWeight:"700"}}>huzaifa.</span>
+        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+          <DiCssdeck size="3rem" />{" "}
+          <span style={{ fontSize: "30px", fontWeight: "700" }}>huzaifa.</span>
         </a>
       </Link>
     </Div1>
@@ -24,7 +36,7 @@ const Header = () =>  (
         <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
-      </li>        
+      </li>
       <li>
         <Link href="#about">
           <NavLink>About</NavLink>
@@ -34,20 +46,20 @@ const Header = () =>  (
         <Link href="#contact">
           <NavLink>Contact</NavLink>
         </Link>
-      </li>        
+      </li>
     </Div2>
-      <Div3>
-        <SocialIcons href="https://github.com/huzaifanur">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://twitter.com/huzaifa98nur">
-          <AiFillTwitterCircle size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillLinkedin size="3rem"/>
-        </SocialIcons>
-      </Div3>
-    </Container>
+    <Div3>
+      <SocialIcons href="https://github.com/huzaifanur">
+        <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://twitter.com/huzaifa98nur">
+        <AiFillTwitterCircle size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://google.com">
+        <AiFillLinkedin size="3rem" />
+      </SocialIcons>
+    </Div3>
+  </Container>
 );
 
 export default Header;
