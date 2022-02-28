@@ -1,19 +1,32 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  display: flex;
+  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`;
+
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  width: 60%;
 `;
 
 export const GridContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
-  place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  display: flex;
+  justify-content: center;
+ gap: 2rem;
+ row-gap: 3rem;
+  flex-wrap: wrap;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
@@ -22,21 +35,37 @@ export const GridContainer = styled.section`
   }
 `;
 export const BlogCard = styled.div`
+  flex-basis: 90%;  
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 500px;
+  
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
+    flex-basis: 100%;  
   }
 `;
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-  font-size: 24px;
+  font-size: 34px;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 600;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`;
+
+export const Stack = styled.div`
+  z-index: 20;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 26px;
+  }
 `;
 
 export const HeaderThree = styled.h3`
@@ -48,7 +77,7 @@ export const HeaderThree = styled.h3`
 `;
 
 export const Hr = styled.hr`
-  width: 50px;
+  width: 80%;
   height: 3px;
   margin: 20px auto;
   border: 0;
@@ -67,10 +96,10 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  font-size: 1.5rem;
+  padding: 3rem ;
+  padding-bottom: 1rem;
   color: #e4e6e7;
-  font-style: 2rem;
-  line-height: 40px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;

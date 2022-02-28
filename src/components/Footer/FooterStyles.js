@@ -1,18 +1,38 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
   max-width: 1400px;
   padding: 2rem 48px 40px;
-  margin: 1rem auto;
-  box-sizing: content-box;
-
-
+  
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
     width: calc(100vw - 32px);
-  }
+}
 `
+export const LinkList = styled.ul`
+width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	padding: 40px 0 28px;
+
+	@media ${props => props.theme.breakpoints.lg} {
+		padding: 32px 0 16px;
+	}
+
+	@media ${props => props.theme.breakpoints.md} {
+		width: 100%;
+		padding: 32px 0 16px;
+		gap: 16px;
+	}
+	@media ${props => props.theme.breakpoints.sm} {
+		width: 100%;
+		padding: 32px 4px 16px;
+		gap: 5px;
+	}
+`
+
 
 export const LinkItem = styled.a`
 	font-size: 18px;
@@ -44,19 +64,15 @@ export const LinkItem = styled.a`
 `
 
 export const SocialIconsContainer = styled.div`
-max-width: 1040px;
-display: flex;
-justify-content: center;
+
+
 
 @media ${props => props.theme.breakpoints.md}{
-  display: flex;
-  justify-content: space-between;
+ 
 }
 
 @media ${props => props.theme.breakpoints.sm}{
-  display: flex;
-	width: 100%;
-  flex-direction: column;
+  
 }
 `
 
@@ -102,39 +118,13 @@ export const Slogan = styled.p`
 `
 
 export const SocialContainer = styled.div`
-	display: flex;
-  align-items: center;
 
 	@media ${props => props.theme.breakpoints.md}{
-		justify-content: center;
-		padding-right: 16px;
-		flex-wrap: wrap;
+
 	}
 `
 
 
-export const LinkList = styled.ul`
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-	grid-template-columns: repeat(3, minmax(85px, 220px));
-	gap: 40px;
-  padding: 40px 0 28px;
-
-	@media ${props => props.theme.breakpoints.lg} {
-		padding: 32px 0 16px;
-	}
-
-	@media ${props => props.theme.breakpoints.md} {
-		width: 100%;
-		padding: 32px 0 16px;
-		gap: 16px;
-	}
-	@media ${props => props.theme.breakpoints.sm} {
-		width: 100%;
-		padding: 32px 4px 16px;
-		gap: 5px;
-	}
-`
 
 export const LinkColumn = styled.div`
 	display: flex;

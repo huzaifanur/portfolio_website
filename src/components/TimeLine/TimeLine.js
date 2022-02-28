@@ -9,9 +9,7 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I am a full stack engineer with a demonstrated history of working in the
-        computer software industry. I love solving complex problems and writing
-        clean code.
+        Full stack software engineer with over year of experience in commercial application development. I love solving problems and writing clean code. I built innovative and cutting edge business solutions for enterprises and startups. Everyday I push myself to improve my character & skills and be a better human being
       </SectionText>
     </Section>
   );

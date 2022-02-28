@@ -11,31 +11,34 @@ import {
   TagList,
   TitleContent,
   UtilityList,
+  Section,
   Img,
+  Stack
 } from "./ProjectsStyles";
 import {
-  Section,
-  SectionDivider,
   SectionTitle,
+  ProjectDivider,
+  SectionDivider,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
-  <Section nopadding id="projects">
+  <Section id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle>Projects</SectionTitle>
     <GridContainer>
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Img src={p.image} />
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
-              <Hr />
+
             </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            <Img src={p.image} />
+            <CardInfo>{p.description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
+              <Stack>Stack</Stack>
+              <Hr />
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
@@ -46,11 +49,12 @@ const Projects = () => (
               <ExternalLinks href={p.visit}>View Demo</ExternalLinks>
               <ExternalLinks href={p.source}>Source Code</ExternalLinks>
             </UtilityList>
+            <ProjectDivider />
           </BlogCard>
         );
       })}
     </GridContainer>
-    <SectionDivider />
+
   </Section>
 );
 

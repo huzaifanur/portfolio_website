@@ -24,6 +24,9 @@ export const Section = styled.section`
   }
 `;
 
+
+
+
 export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
@@ -60,12 +63,12 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-  /* max-width: 800px; */
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: lightgray @media ${(props) => props.theme.breakpoints.md} {
+  color: lightgray;
+   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
     line-height: 32px;
@@ -100,6 +103,18 @@ export const SectionDivider = styled.div`
     width: 32px;
     height: 2px;
   }
+`;
+export const ProjectDivider = styled.div`
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #fff;
+  background: ${(props) =>
+    props.colorAlt
+      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
+      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
+
+ 
 `;
 export const SectionSubText = styled.p`
   max-width: 800px;

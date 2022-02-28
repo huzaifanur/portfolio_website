@@ -8,10 +8,10 @@ import { Layout } from '../layout/Layout';
 const Home = () => {
   return (
     <Layout>
-      {/* <Hero/>
-      <Projects />
+      <Hero />
       <Timeline />
-      <Technologies /> */}
+      <Projects />
+      <Technologies />
 
     </Layout>
   );
