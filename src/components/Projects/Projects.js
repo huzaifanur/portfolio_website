@@ -42,8 +42,10 @@ const Projects = () => (
               })}
             </TagList>
             <UtilityList>
-              <ExternalLinks href={p.visit}>View</ExternalLinks>
-              <ExternalLinks href={p.source}>Source Code</ExternalLinks>
+              <ExternalLinks href={p.visit}>View Website</ExternalLinks>
+              <ExternalLinks href="mailto:huzaifa98nur@gmail.com">
+                Request Code Demo
+              </ExternalLinks>
             </UtilityList>
           </BlogCard>
         );
