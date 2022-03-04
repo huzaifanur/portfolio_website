@@ -24,8 +24,6 @@ height: 100%;
 
 `
 
-
-
 export const CenterSection = styled.div`
   max-width: 100%;
   margin-left:60px;

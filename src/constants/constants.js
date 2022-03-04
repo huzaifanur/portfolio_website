@@ -1,4 +1,46 @@
 export const projects = [
+
+  {
+
+    title: "Chorus Mediation",
+    description:
+      "Chorus is a subscription based online group meditation classes led by live instructors.",
+    image: "/images/chorus.png",
+    tags: ["React", "Tailwind CSS"],
+    source: "https://github.com/huzaifanur/hulu-demo",
+    visit: "https://app.chorusmeditation.com/",
+    id: 2,
+  },
+  {
+    title: "Duro Labs",
+    description:
+      "This is used by hardware industry users to develop their products in the cloud quickly",
+    image: "/images/duro.png",
+    tags: ["React","Express", "Sass",],
+    source: "https://github.com/huzaifanur/hulu-demo",
+    visit: "https://www.durolabs.co",
+    id: 3,
+  },
+  {
+    title: "Automated Crypto Trading",
+    description:
+      "Web app to build crypto trading bots that buy & sell Bitcoin or other cryptocurrencies",
+    image: "/images/2.png",
+    tags: ["NEXT JS", "Tailwind CSS"],
+    source: "https://github.com/huzaifanur/hulu-demo",
+    visit: "https://yanda.io/",
+    id: 4,
+  },
+  {
+    title: "Auav",
+    description:
+      " A platform for presenting drone data with a focus on asset inspection and complete 3D site capture. All data is accessible securely in the cloud and can be viewed in real time on the web. ",
+    image: "/images/auav.png",
+    tags: ["NEXT JS", "Tailwind CSS"],
+    source: "https://github.com/huzaifanur/hulu-demo",
+    visit: "https://www.auav.com.au/insite/",
+    id: 5,
+  },
   {
     title: "Admin Dashboard",
     description:
@@ -19,22 +61,7 @@ export const projects = [
     visit: "https://hulu-demo-theta.vercel.app/",
     id: 1,
   },
-  // {
-  //   title: 'WebRTC App',
-  //   description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-  //     image: '/images/3.jpg',
-  //     tags: ['React', 'WebRTC'],
-  //   source: 'https://google.com',
-  //   visit: 'https://google.com',
-  //   id: 2,
-  // },
-  // {
-  //   title: 'Unichat',
-  //   description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-  //   image: '/images/4.jpg',
-  //   tags: ['React', 'ChatEngine', 'Firebase'],
-  //   source: 'https://google.com',
-  //   visit: 'https://google.com',
-  //   id: 3,
-  // },
+
 ];
+
+
