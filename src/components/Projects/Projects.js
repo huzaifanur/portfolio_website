@@ -34,23 +34,21 @@ const Projects = () => (
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
-                })}
-              </TagList>
-            </div>
+
+            <TitleContent>Stack</TitleContent>
+            <TagList>
+              {p.tags.map((t, i) => {
+                return <Tag key={i}>{t}</Tag>;
+              })}
+            </TagList>
             <UtilityList>
-              <ExternalLinks href={p.visit}>View Demo</ExternalLinks>
+              <ExternalLinks href={p.visit}>View</ExternalLinks>
               <ExternalLinks href={p.source}>Source Code</ExternalLinks>
             </UtilityList>
           </BlogCard>
         );
       })}
     </GridContainer>
-
   </Section>
 );
 

@@ -1,7 +1,5 @@
 export const projects = [
-
   {
-
     title: "Chorus Mediation",
     description:
       "Chorus is a subscription based online group meditation classes led by live instructors.",
@@ -16,7 +14,7 @@ export const projects = [
     description:
       "This is used by hardware industry users to develop their products in the cloud quickly",
     image: "/images/duro.png",
-    tags: ["React","Express", "Sass",],
+    tags: ["React", "Express", "Sass"],
     source: "https://github.com/huzaifanur/hulu-demo",
     visit: "https://www.durolabs.co",
     id: 3,
@@ -25,7 +23,7 @@ export const projects = [
     title: "Automated Crypto Trading",
     description:
       "Web app to build crypto trading bots that buy & sell Bitcoin or other cryptocurrencies",
-    image: "/images/2.png",
+    image: "/images/yanda.png",
     tags: ["NEXT JS", "Tailwind CSS"],
     source: "https://github.com/huzaifanur/hulu-demo",
     visit: "https://yanda.io/",
@@ -51,17 +49,4 @@ export const projects = [
     visit: "https://huzaifanur.github.io/admin-dash-react/",
     id: 0,
   },
-  {
-    title: "Hulu Clone",
-    description:
-      "A simple page that pulls movies data from TMDB, represent a hulu clone.",
-    image: "/images/2.png",
-    tags: ["NEXT JS", "Tailwind CSS"],
-    source: "https://github.com/huzaifanur/hulu-demo",
-    visit: "https://hulu-demo-theta.vercel.app/",
-    id: 1,
-  },
-
 ];
-
-

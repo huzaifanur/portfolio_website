@@ -1,19 +1,11 @@
 import styled from "styled-components";
 
-export const Img = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-`;
-
 export const GridContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 3rem;
-  place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
@@ -25,7 +17,18 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 500px;
+  margin-bottom: 2rem;
+  flex-basis: 48%;
+  height: 900px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`;
+export const Img = styled.img`
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 280px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -34,7 +37,7 @@ export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-  font-size: 24px;
+  font-size: 34px;
   padding-top: 20px;
   font-weight: 600;
 `;
@@ -67,11 +70,11 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  word-spacing: 0.2rem;
+  padding: 0 2rem;
   color: #e4e6e7;
-  font-style: 2rem;
-  line-height: 40px;
-  text-align: justify;
+  line-height: 2.5rem;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.3rem;
   }
@@ -83,12 +86,19 @@ export const UtilityList = styled.ul`
   display: flex;
   justify-content: space-around;
   margin: 2.5rem 0;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-wrap: wrap;
+  }
 `;
 
 export const ExternalLinks = styled.a`
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #d4c0c0;
   font-size: 1.6rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   background: #6b3030;
   border-radius: 15px;
   transition: 0.5s;
