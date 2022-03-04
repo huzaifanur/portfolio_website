@@ -35,7 +35,7 @@ export const CenterSection = styled.div`
   justify-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     
@@ -51,9 +51,9 @@ export const CenterSection = styled.div`
 `;
 
 export const HeroSectionTitle = styled.h2`
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 72px;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
   
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
@@ -104,7 +104,7 @@ export const HeroSection = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0"} ;
 
     width: calc(100vw - 32px);
     flex-direction: column;

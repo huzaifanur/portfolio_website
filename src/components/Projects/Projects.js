@@ -50,7 +50,7 @@ const Projects = () => (
         );
       })}
     </GridContainer>
-    <SectionDivider />
+
   </Section>
 );
 

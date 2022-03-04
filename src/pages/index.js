@@ -7,12 +7,10 @@ import { Layout } from '../layout/Layout';
 
 const Home = () => {
   return (
-    <Layout>  
-      <Hero/>
+    <Layout>
+      <Hero />
       <Projects />
-      <Timeline />
       <Technologies />
-      
     </Layout>
   );
 };
