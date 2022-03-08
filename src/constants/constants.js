@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Chorus is a subscription based online group meditation classes led by live instructors.",
     image: "/images/chorus.png",
-    tags: ["React", "Tailwind CSS"],
+    tags: ["React", "Tailwind", "Golang"],
     source: "https://github.com/huzaifanur/hulu-demo",
     visit: "https://app.chorusmeditation.com/",
     id: 2,
@@ -24,7 +24,7 @@ export const projects = [
     description:
       "Web app to build crypto trading bots that buy & sell Bitcoin or other cryptocurrencies",
     image: "/images/yanda.png",
-    tags: ["NEXT JS", "Tailwind CSS"],
+    tags: ["React", "Golang"],
     source: "https://github.com/huzaifanur/hulu-demo",
     visit: "https://yanda.io/",
     id: 4,
@@ -34,7 +34,7 @@ export const projects = [
     description:
       " A platform for presenting drone data with a focus on asset inspection and complete 3D site capture. All data is accessible securely in the cloud and can be viewed in real time on the web. ",
     image: "/images/auav.png",
-    tags: ["NEXT JS", "Tailwind CSS"],
+    tags: ["React", "MUI"],
     source: "https://github.com/huzaifanur/hulu-demo",
     visit: "https://www.auav.com.au/insite/",
     id: 5,
